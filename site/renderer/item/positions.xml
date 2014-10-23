@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderer>
+	<positions layout="default">
+		<position name="title">Title</position>
+		<position name="media">Media</position>
+		<position name="meta">Meta</position>
+		<position name="description">Description</position>
+		<position name="links">Links</position>
+	</positions>
+	<positions layout="links">
+		<position name="links">Links</position>
+	</positions>	
+	<positions layout="downloads">
+		<position name="downloads">Downloads</position>
+	</positions>
+</renderer>

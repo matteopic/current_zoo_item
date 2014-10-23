@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout name="default">
+		<name>Default</name>
+		<description>This is the default layout to render an item in the module themes.</description>
+	</layout>
+	<layout name="downloads">
+		<name>Downloads</name>
+		<description>This is an alternative layout to render an item in the module themes.</description>
+	</layout>
+	<layout name="links">
+		<name>Links</name>
+		<description>This is an alternative layout to render an item in the module themes.</description>
+	</layout>
+</metadata>
