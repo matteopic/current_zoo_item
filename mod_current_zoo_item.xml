@@ -32,7 +32,7 @@
 					<option value="middle">Middle</option>
 					<option value="bottom">Bottom</option>
 				</field>
-<!-- 				<field name="application" type="zooapplication" default="" label="Items" description="APPLICATION_DESCRIPTION" categories="true" frontpage="true" items="true" types="true" />
+ 				<!-- field name="application" type="zooapplication" default="" label="Items" description="APPLICATION_DESCRIPTION" categories="true" frontpage="true" items="true" types="true" />
 				<field name="mode" type="hidden" label="" required="false" description="" />
 				<field name="type" type="hidden" label="" required="false" description="" />
 				<field name="category" type="hidden" label="" required="false" description="" />
@@ -41,9 +41,9 @@
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
- -->
+
 				<field name="count" type="text" default="4" size="5" label="Item Count" description="Maximum number of items to display" />
-				<field name="order" type="zooitemorder" default="_itemname" label="Item Order" description="Order that the items will be displayed in" apps="true" random="true" />
+				<field name="order" type="zooitemorder" default="_itemname" label="Item Order" description="Order that the items will be displayed in" apps="true" random="true" /-->
 				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
 			</fieldset>
 		</fields>

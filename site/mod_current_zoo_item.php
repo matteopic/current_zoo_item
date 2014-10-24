@@ -2,7 +2,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-$menu = & JSite::getMenu()->getItem( JRequest::getInt('Itemid') );
+$menu = JSite::getMenu()->getItem( JRequest::getInt('Itemid') );
 if(!$menu) return;
 
 $view = JRequest::getString("view");
@@ -23,14 +23,16 @@ $path = dirname(__FILE__);
 
 //register base path
 $zoo->path->register($path, 'mod_current_zoo_item');
-
+$renderer = $zoo->renderer->create('item')->addPath(array($zoo->path->path('component.site:'), dirname(__FILE__)));
 if($view == 'item'){
 	$id = $menu->params->get('item_id');
 	if(!$id && JRequest::getString ("task") == 'item')$id = JRequest::getString ("item_id");
 	if(!$id)return;
 
-	$item = $zoo->table->item->get($id);
-	include 'renderer/item.php';
+	$items = array();
+	$items[] = $zoo->table->item->get($id);
+	$layout = $params->get('layout', 'default');
+	include JModuleHelper::getLayoutPath('mod_current_zoo_item', $params->get('theme', 'list'));
 }
 else if($view == 'category'){
 	$id = $menu->params->get('category');
